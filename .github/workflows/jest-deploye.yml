@@ -11,10 +11,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "12"
-
-      # Speed up subsequent runs with caching
-      - name: Cache node modules
-        uses: actions/cache@v1        
+       
       # Install required deps for action
       - name: Install Dependencies
         run: npm install
